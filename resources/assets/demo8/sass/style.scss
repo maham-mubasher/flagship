@@ -1,0 +1,298 @@
+//
+// Theme style
+//
+
+// Initialize
+@import "init";
+
+// Components
+@import "../../core/sass/components/components";
+@import "components/components";
+
+// Layout
+@import "layout/layout";
+//@import "../../core/sass/docs/layout";
+.btn {
+    outline: none !important;
+    vertical-align: middle;
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn i {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn:hover:not(.btn-text), .btn:focus:not(.btn-text), .btn.focus {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn:hover:not(.btn-text) i, .btn:focus:not(.btn-text) i, .btn.focus i {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn.disabled, .btn:disabled {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn.disabled i, .btn:disabled i {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn:not(:disabled):not(.disabled):active:not(.btn-text), .btn:not(:disabled):not(.disabled).active, .show > .btn.dropdown-toggle {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn:not(:disabled):not(.disabled):active:not(.btn-text) i, .btn:not(:disabled):not(.disabled).active i, .show > .btn.dropdown-toggle i {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+.btn:focus:not(.btn-shadow):not(.btn-shadow-hover) {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.btn.btn-square {
+    border-radius: 0;
+}
+.btn.btn-pill {
+    border-radius: 2rem;
+}
+.btn.btn-text {
+    cursor: text;
+}
+.btn:not(.btn-text) {
+    cursor: pointer;
+}
+.btn.btn-borderless {
+    border-color: transparent;
+}
+
+.btn i {
+    //font-size: 1.3rem;
+    padding-right: 0.35rem;
+    vertical-align: middle;
+    line-height: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.btn .svg-icon {
+    margin-right: 0.5rem;
+}
+.btn .svg-icon svg {
+    height: 18px;
+    width: 18px;
+}
+.btn.btn-xs i {
+    font-size: 1rem;
+    padding-right: 0.3rem;
+}
+.btn.btn-xs .svg-icon {
+    margin-right: 0.3rem;
+}
+.btn.btn-xs .svg-icon svg {
+    height: 16px;
+    width: 16px;
+}
+.btn.btn-sm i, .btn-group-sm > .btn i {
+    //font-size: 1.3rem;
+    padding-right: 0.35rem;
+}
+.btn.btn-sm .svg-icon, .btn-group-sm > .btn .svg-icon {
+    margin-right: 0.35rem;
+}
+.btn.btn-sm .svg-icon svg, .btn-group-sm > .btn .svg-icon svg {
+    height: 16px;
+    width: 16px;
+}
+.btn.btn-lg i, .btn-group-lg > .btn i {
+    font-size: 1.5rem;
+    padding-right: 0.75rem;
+}
+.btn.btn-lg .svg-icon, .btn-group-lg > .btn .svg-icon {
+    margin-right: 0.75rem;
+}
+.btn.btn-lg .svg-icon svg, .btn-group-lg > .btn .svg-icon svg {
+    height: 20px;
+    width: 20px;
+}
+.btn.btn-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    height: calc(1.5em + 1.3rem + 2px);
+    width: calc(1.5em + 1.3rem + 2px);
+}
+.btn.btn-icon.btn-xs {
+    height: 24px;
+    width: 24px;
+}
+.btn.btn-icon.btn-sm, .btn-group-sm > .btn.btn-icon {
+    height: calc(1.35em + 1.1rem + 2px);
+    width: calc(1.35em + 1.1rem + 2px);
+}
+.btn.btn-icon.btn-lg, .btn-group-lg > .btn.btn-icon {
+    height: calc(1.5em + 1.65rem + 2px);
+    width: calc(1.5em + 1.65rem + 2px);
+}
+.btn.btn-icon.btn-circle {
+    border-radius: 50%;
+}
+.btn.btn-icon i {
+    padding: 0;
+    margin: 0;
+}
+.btn.btn-icon [class^=socicon-]:before,
+.btn.btn-icon [class*=" socicon-"]:before {
+    line-height: 1;
+}
+.btn.btn-icon .svg-icon {
+    margin: 0;
+    padding: 0;
+}
+.btn.btn-fixed-height {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.btn.btn-fixed-height.btn {
+    height: calc(1.5em + 1.3rem + 2px);
+}
+.btn.btn-fixed-height.btn-sm, .btn-group-sm > .btn.btn-fixed-height {
+    height: calc(1.35em + 1.1rem + 2px);
+}
+.btn.btn-fixed-height.btn-lg, .btn-group-lg > .btn.btn-fixed-height {
+    height: calc(1.5em + 1.65rem + 2px);
+}
+.btn.btn-primary i {
+    color: #FFFFFF;
+}
+.btn.btn-primary .svg-icon svg g [fill] {
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+    fill: #FFFFFF;
+}
+.btn.btn-primary .svg-icon svg:hover g [fill] {
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+}
+.btn {
+    padding: 0.65rem 1rem!important;
+    border: 1px solid transparent!important;
+}
+.font-size-base {
+    font-size: 1rem;
+}
+
+.font-size-sm {
+    font-size: 0.925rem;
+}
+
+.font-size-xs {
+    font-size: 0.8rem;
+}
+
+.font-size-lg {
+    font-size: 1.08rem;
+}
+
+.font-size-h1 {
+    font-size: 2rem !important;
+}
+
+.font-size-h2 {
+    font-size: 1.75rem !important;
+}
+
+.font-size-h3 {
+    font-size: 1.5rem !important;
+}
+
+.font-size-h4 {
+    font-size: 1.35rem !important;
+}
+
+.font-size-h5 {
+    font-size: 1.25rem !important;
+}
+
+.font-size-h6 {
+    font-size: 1.175rem !important;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .table-mobile thead {
+        display: none!important;
+    }
+    .table-mobile table, .table-mobile tbody, .table-mobile td, .table-mobile tfoot, .table-mobile th, .table-mobile thead, .table-mobile tr {
+        display: block;
+    }
+    .table-mobile table tr td {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+
+.nav-line-tabs .nav-item .nav-link.active,
+.nav-line-tabs .nav-item.show .nav-link,
+.nav-line-tabs .nav-item .nav-link:hover:not(.disabled) {
+    border-bottom: 1px solid var(--bs-light)!important;
+}
+
+.table:not(.table-bordered).table-row-bordered tr {
+    border-bottom-color: #83d3ef!important;
+}
+
+.form-control:focus {
+    border-color: #00a7e0;
+}
+
+td.dataTables_empty {
+    background-color: white;
+}
+
+.btn-sm {
+    padding: 5px 10px!important;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.dataTables_scrollHead {
+
+    .dataTables_scrollHeadInner {
+        width: 100%!important;
+    }
+}
+
+select, ::placeholder, .select2-container--bootstrap5 .select2-selection--single .select2-selection__rendered {
+    color: #404040!important;
+}
